@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>18</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2106</x>
-      <y>1476</y>
-      <w>1206</w>
-      <h>702</h>
+      <x>380</x>
+      <y>405</y>
+      <w>330</w>
+      <h>195</h>
     </coordinates>
     <panel_attributes>+PlotView
 --
@@ -18,7 +18,7 @@
 -partNode: CollectedDataNode
 -simulatorSubscriberManager: SimulatorSubscriberManager
 -CommonSubscriber: Subscriber--EndSubscriber: Subscriber
--plotDataParser^ PlotDataParser
+-plotDataParser: PlotDataParser
 --
 + getFrame() : ChartComposite
 + getOpenedPlotMap() : Map&lt;CollectedDataNode, Integer&gt;
@@ -39,10 +39,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1962</x>
-      <y>216</y>
-      <w>1134</w>
-      <h>432</h>
+      <x>380</x>
+      <y>60</y>
+      <w>325</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>RDOSerializedObjectsView
 --
@@ -69,10 +69,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3546</x>
-      <y>234</y>
-      <w>1026</w>
-      <h>486</h>
+      <x>810</x>
+      <y>65</y>
+      <w>285</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>PlotDataParser
 --
@@ -95,10 +95,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
-      <y>1062</y>
-      <w>576</w>
-      <h>288</h>
+      <x>55</x>
+      <y>315</y>
+      <w>160</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>/AbstractIndex/
 --
@@ -114,10 +114,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
-      <y>1494</y>
-      <w>792</w>
-      <h>396</h>
+      <x>30</x>
+      <y>445</y>
+      <w>220</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>Index
 --
@@ -137,96 +137,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>144</x>
-      <y>2106</y>
-      <w>684</w>
-      <h>252</h>
-    </coordinates>
-    <panel_attributes>PatternIndex
---
-~ structure : JSONObject
-~ timesExecuted : int
---
-+ PatternIndex(number : int,
-        structure : JSONObject) &lt;&lt;constructor&gt;&gt;
-+ getStructure() : JSONObject</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>144</x>
-      <y>2502</y>
-      <w>684</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>ResourceIndex
---
-~ erased : boolean
---
-+ ResourceIndex(number : int) &lt;&lt;constructor&gt;&gt;
-+ isErased() : boolean</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>846</x>
-      <y>2106</y>
-      <w>684</w>
-      <h>252</h>
-    </coordinates>
-    <panel_attributes>ResourceTypeIndex
---
-- structure : JSONObject
---
-~ ResourceTypeIndex(number : int,
-        structure : JSONObject) &lt;&lt;constructor&gt;&gt;
-+ getStructure() : JSONObject</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>414</x>
-      <y>2898</y>
-      <w>882</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>ResultIndex
---
-- type : ResultType
---
-~ ResultIndex(number : int, type : ResultType) &lt;&lt;constructor&gt;&gt;
-+ getResultType() : ResultType</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>846</x>
-      <y>2502</y>
-      <w>756</w>
-      <h>288</h>
-    </coordinates>
-    <panel_attributes>ResourceParameterIndex
---
-- cache : ValueCache
-- offset : int
---
-~ ResourceParameterIndex(number : int,
-        cache : ValueCache, offset : int) &lt;&lt;constructor&gt;&gt;
-+ getValueCache() : ValueCache
-+ getOffset() : int</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>3654</x>
-      <y>1350</y>
-      <w>1116</w>
-      <h>990</h>
+      <x>975</x>
+      <y>375</y>
+      <w>265</w>
+      <h>275</h>
     </coordinates>
     <panel_attributes>Database
 --
@@ -262,10 +176,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3654</x>
-      <y>2520</y>
-      <w>918</w>
-      <h>180</h>
+      <x>970</x>
+      <y>725</y>
+      <w>255</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>Entry
 --
@@ -278,10 +192,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3546</x>
-      <y>918</y>
-      <w>720</w>
-      <h>198</h>
+      <x>810</x>
+      <y>255</y>
+      <w>200</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>PlotItem
 --
@@ -294,10 +208,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>198</x>
-      <y>216</y>
-      <w>1512</w>
-      <h>576</h>
+      <x>0</x>
+      <y>60</y>
+      <w>285</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>CollectedDataNode
 --
@@ -321,10 +235,10 @@
   <element>
     <type>com.baselet.element.old.element.Class</type>
     <coordinates>
-      <x>1962</x>
-      <y>2304</y>
-      <w>1512</w>
-      <h>594</h>
+      <x>380</x>
+      <y>640</y>
+      <w>425</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>+PlotFrame
 --
@@ -352,10 +266,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2124</x>
-      <y>3024</y>
-      <w>378</w>
-      <h>126</h>
+      <x>730</x>
+      <y>570</y>
+      <w>105</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>ChartComposite
 --
@@ -367,136 +281,81 @@
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2250</x>
-      <y>2844</y>
-      <w>72</w>
-      <h>198</h>
+      <x>765</x>
+      <y>590</y>
+      <w>24</w>
+      <h>59</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;180;54;54</additional_attributes>
+    <additional_attributes>15;15;15;50</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2988</x>
-      <y>1314</y>
-      <w>72</w>
-      <h>180</h>
+      <x>530</x>
+      <y>355</y>
+      <w>24</w>
+      <h>59</h>
     </coordinates>
     <panel_attributes>lt=&gt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;162;54;54</additional_attributes>
+    <additional_attributes>15;50;15;15</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>846</x>
-      <y>1296</y>
-      <w>72</w>
-      <h>216</h>
+      <x>120</x>
+      <y>380</y>
+      <w>24</w>
+      <h>74</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>54;54;54;198</additional_attributes>
+    <additional_attributes>15;15;15;65</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>36</x>
-      <y>1782</y>
-      <w>486</w>
-      <h>738</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>468;54;54;54;54;648;414;648;414;720</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>396</x>
-      <y>1836</y>
-      <w>288</w>
-      <h>288</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>270;54;270;144;54;144;54;270</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>1152</x>
-      <y>1638</y>
-      <w>450</w>
-      <h>882</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>144;54;432;54;432;792;54;792;54;864</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>0</x>
-      <y>1656</y>
-      <w>522</w>
-      <h>1386</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>504;54;54;54;54;1368;414;1368</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>1134</x>
-      <y>1836</y>
-      <w>72</w>
-      <h>288</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;54;54;270</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>2934</x>
-      <y>594</y>
-      <w>504</w>
-      <h>1188</h>
+      <x>670</x>
+      <y>165</y>
+      <w>24</w>
+      <h>249</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 
 </panel_attributes>
-    <additional_attributes>378;1152;468;1152;468;306;54;306;54;54</additional_attributes>
+    <additional_attributes>15;240;15;15</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2754</x>
-      <y>36</y>
-      <w>1476</w>
-      <h>234</h>
+      <x>620</x>
+      <y>10</y>
+      <w>354</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1..n
 </panel_attributes>
-    <additional_attributes>1440;198;1440;54;54;54;54;180</additional_attributes>
+    <additional_attributes>345;55;345;15;15;15;15;50</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>846</x>
+      <x>120</x>
       <y>0</y>
-      <w>1476</w>
-      <h>252</h>
+      <w>379</w>
+      <h>69</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-&gt;
 m=1...n</panel_attributes>
-    <additional_attributes>1440;216;1440;90;54;90;54;216</additional_attributes>
+    <additional_attributes>370;60;370;25;15;25;15;60</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1998</x>
-      <y>864</y>
-      <w>378</w>
-      <h>126</h>
+      <x>375</x>
+      <y>240</y>
+      <w>105</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Subscriber
 --
@@ -508,70 +367,70 @@ m=1...n</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2124</x>
-      <y>594</y>
-      <w>90</w>
-      <h>306</h>
+      <x>415</x>
+      <y>165</y>
+      <w>24</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>54;54;54;270</additional_attributes>
+    <additional_attributes>15;15;15;75</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>3780</x>
-      <y>666</y>
-      <w>132</w>
-      <h>288</h>
+      <x>895</x>
+      <y>185</y>
+      <w>38</w>
+      <h>79</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;  -&gt;
 m1=   1..n
 r2=создает
 </panel_attributes>
-    <additional_attributes>72;54;72;252</additional_attributes>
+    <additional_attributes>20;15;20;70</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>4248</x>
-      <y>666</y>
-      <w>90</w>
-      <h>720</h>
+      <x>1030</x>
+      <y>185</y>
+      <w>24</w>
+      <h>199</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>54;684;54;54</additional_attributes>
+    <additional_attributes>15;190;15;15</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>4050</x>
-      <y>2286</y>
-      <w>180</w>
-      <h>252</h>
+      <x>1070</x>
+      <y>635</y>
+      <w>52</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-&gt;
 n1=1..n</panel_attributes>
-    <additional_attributes>108;54;108;234</additional_attributes>
+    <additional_attributes>30;15;30;90</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>846</x>
-      <y>738</y>
-      <w>90</w>
-      <h>360</h>
+      <x>120</x>
+      <y>205</y>
+      <w>24</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-&gt;
 m1=1..1</panel_attributes>
-    <additional_attributes>54;54;54;324</additional_attributes>
+    <additional_attributes>15;15;15;110</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2862</x>
-      <y>1242</y>
-      <w>378</w>
-      <h>126</h>
+      <x>495</x>
+      <y>335</y>
+      <w>105</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>JFreeChart
 --
@@ -583,21 +442,21 @@ m1=1..1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2610</x>
-      <y>594</y>
-      <w>90</w>
-      <h>306</h>
+      <x>595</x>
+      <y>165</y>
+      <w>24</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;270;54;54</additional_attributes>
+    <additional_attributes>15;75;15;15</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2484</x>
-      <y>864</y>
-      <w>378</w>
-      <h>126</h>
+      <x>560</x>
+      <y>240</y>
+      <w>105</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>ViewPart
 --
@@ -609,46 +468,46 @@ m1=1..1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2610</x>
-      <y>936</y>
-      <w>90</w>
-      <h>576</h>
+      <x>595</x>
+      <y>260</y>
+      <w>24</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>54;54;54;540</additional_attributes>
+    <additional_attributes>15;15;15;145</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>1746</x>
-      <y>504</y>
-      <w>252</w>
-      <h>2088</h>
+      <x>305</x>
+      <y>120</y>
+      <w>84</w>
+      <h>549</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 </panel_attributes>
-    <additional_attributes>216;2052;54;2052;54;54;216;54</additional_attributes>
+    <additional_attributes>75;540;15;540;15;15;75;15</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2646</x>
-      <y>2124</y>
-      <w>90</w>
-      <h>216</h>
+      <x>530</x>
+      <y>585</y>
+      <w>24</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&lt;&gt;
 m1=1..1
 </panel_attributes>
-    <additional_attributes>54;54;54;180</additional_attributes>
+    <additional_attributes>15;15;15;55</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2556</x>
-      <y>3024</y>
-      <w>414</w>
-      <h>108</h>
+      <x>185</x>
+      <y>670</y>
+      <w>115</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>+PlotKeyListener
 --
@@ -660,10 +519,10 @@ m1=1..1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3006</x>
-      <y>2988</y>
-      <w>432</w>
-      <h>252</h>
+      <x>180</x>
+      <y>730</y>
+      <w>120</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>+PlotMouseMoveListener
 --
@@ -680,10 +539,10 @@ m1=1..1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3654</x>
-      <y>2772</y>
-      <w>414</w>
-      <h>126</h>
+      <x>845</x>
+      <y>680</y>
+      <w>115</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>+PlotMouseWheelListener
 --
@@ -694,10 +553,10 @@ m1=1..1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2142</x>
-      <y>1242</y>
-      <w>378</w>
-      <h>126</h>
+      <x>375</x>
+      <y>335</y>
+      <w>105</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Subscriber
 --
@@ -709,78 +568,72 @@ m1=1..1
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>2268</x>
-      <y>1314</y>
-      <w>72</w>
-      <h>180</h>
+      <x>410</x>
+      <y>355</y>
+      <w>24</w>
+      <h>59</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>54;162;54;54</additional_attributes>
+    <additional_attributes>15;50;15;15</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>295</x>
+      <y>680</y>
+      <w>95</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>295</x>
+      <y>755</y>
+      <w>95</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>4356</x>
-      <y>918</y>
-      <w>450</w>
-      <h>162</h>
+      <x>750</x>
+      <y>455</y>
+      <w>200</w>
+      <h>65</h>
     </coordinates>
-    <panel_attributes>AxisHelper
+    <panel_attributes>-RealTimeUpdateRunnable
 --
-
+- isLastEntry : boolean
 --
-+AxisHelper(boolean, List&lt;String&gt;)
-
-</panel_attributes>
+- RealTimeUpdateRunnable(boolean: isLastEntry) &lt;&lt;constructor&gt;&gt;
++ run() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4446</x>
-      <y>702</y>
-      <w>54</w>
-      <h>252</h>
+      <x>705</x>
+      <y>485</y>
+      <w>55</w>
+      <h>15</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>4662</x>
-      <y>252</y>
-      <w>576</w>
-      <h>216</h>
+      <x>800</x>
+      <y>695</y>
+      <w>55</w>
+      <h>15</h>
     </coordinates>
-    <panel_attributes>+DataParserResult
---
-+List&lt;PlotItem&gt; dataset;
-+AxisHelper axisHelper
---
-+DataParserResult(List&lt;PlotItem&gt;,AxisHelper)
-
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>4662</x>
-      <y>522</y>
-      <w>576</w>
-      <h>198</h>
-    </coordinates>
-    <panel_attributes>+ParseInfo
---
-+itemNumber: int
-+dataParserResult: DataParserResult
---
-+ParseInfo(final DataParserResult dataParserResult, int itemNumber) 
-
-
-</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
